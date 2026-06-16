@@ -1,0 +1,268 @@
+:root {
+  --page-accent: #1db86a;
+}
+
+/* ── RESUME HEADER ── */
+.resume-header {
+  padding: 5rem 3rem 3rem;
+  border-bottom: 1px solid rgba(240, 240, 240, 0.08);
+}
+
+.resume-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 7rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.resume-header-sub {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.resume-header-sub span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(240, 240, 240, 0.35);
+}
+
+.resume-header-sub span.highlight {
+  color: var(--page-accent);
+}
+
+.resume-download {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--page-accent);
+  border: 1px solid var(--page-accent);
+  padding: 0.5rem 1.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.resume-download:hover {
+  background: var(--page-accent);
+  color: var(--black);
+}
+
+/* ── RESUME GRID ── */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 0;
+  min-height: calc(100vh - 80px - 160px);
+}
+
+.resume-col {
+  padding: 3rem;
+}
+
+.resume-col:first-child {
+  border-right: 1px solid rgba(240, 240, 240, 0.08);
+}
+
+/* ── SECTION ── */
+.resume-section {
+  margin-bottom: 3.5rem;
+}
+
+.resume-section-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--page-accent);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(29, 184, 106, 0.2);
+}
+
+/* ── EDUCATION ITEM ── */
+.edu-item {
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--page-accent);
+  position: relative;
+}
+
+.edu-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--page-accent);
+  border-radius: 0;
+}
+
+.edu-school {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.edu-degree {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--page-accent);
+  letter-spacing: 0.15em;
+  margin: 0.35rem 0 0.2rem;
+}
+
+.edu-details {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: rgba(240, 240, 240, 0.35);
+  letter-spacing: 0.1em;
+}
+
+/* ── SKILLS ── */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skill-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--page-accent);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgba(29, 184, 106, 0.3);
+  color: rgba(240, 240, 240, 0.6);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.skill-tag:hover {
+  border-color: var(--page-accent);
+  color: var(--white);
+}
+
+/* ── EXPERIENCE / TIMELINE ── */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--page-accent), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.75rem;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background: var(--black);
+  border: 2px solid var(--page-accent);
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--page-accent);
+  opacity: 0.7;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-role {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.timeline-org {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--page-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.timeline-desc {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: rgba(240, 240, 240, 0.55);
+}
+
+/* terminal prompt detail */
+.terminal-prompt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--page-accent);
+  opacity: 0.5;
+  margin-top: 0.5rem;
+}
+
+.terminal-prompt::before {
+  content: '> ';
+}
+
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+  .resume-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.08);
+  }
+}

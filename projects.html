@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — William Owen</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo glitch" data-text="W.OWEN">W.OWEN</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="partnerships.html">Partnerships</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="rec">REC</span>
+      <span data-clock>00:00:00</span>
+    </div>
+  </nav>
+
+  <div class="bg-grid"></div>
+
+  <div class="page-wrapper">
+
+    <header class="projects-header">
+      <span class="section-label">// 01 — Archive</span>
+      <h1 class="glitch" data-text="Projects">Projects</h1>
+      <p>Hover any project to expand. Scroll left/right or drag to browse.</p>
+    </header>
+
+    <!-- WHEEL -->
+    <section class="wheel-section">
+      <div class="wheel-track-wrapper">
+        <div class="wheel-track">
+
+          <!--
+            ═══════════════════════════════════════════════════════════════════
+            HOW TO ADD / EDIT PROJECTS
+            ─────────────────────────────────────────────────────────────────
+            Each .project-card block is one project. Copy/paste a block to add
+            more. Fill in the data-* attributes — they populate the expanded
+            panel automatically when you click the card.
+
+            data-title       Project name (shown in panel header)
+            data-type        e.g. "Video Design", "Projection Mapping"
+            data-year        e.g. "2024"
+            data-role        Your role, e.g. "Video Designer"
+            data-venue       Venue / event name
+            data-description A paragraph about the project
+            data-credits     HTML string for the credits block (use <br> for line breaks)
+            data-video       Path to a video file, e.g. assets/videos/project1.mp4
+            data-image       Path to a thumbnail image, e.g. assets/images/project1.jpg
+                             (data-video takes priority over data-image)
+
+            CARD THUMBNAIL:
+            Inside .project-card-thumb, replace the .project-card-thumb-placeholder
+            div with an <img> or <video> tag pointing to your file.
+            ═══════════════════════════════════════════════════════════════════
+          -->
+
+          <div class="project-card"
+            data-title="Get F*cked"
+            data-type="Theatre"
+            data-year="2026"
+            data-role="Video Integration"
+            data-venue="The Tank"
+            data-description="LED signage, on a budget! A predetermined template, one projector, and nine letters cut precisely out of foam. A full show's worth of animations and video content was then projected precisely onto these letters, including dynamic dance visuals during high energy and transitional moments."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Reese Villella"
+            data-video="assets/videos/get-fucked/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/get-fucked/thumbnail.jpg" alt="Get F*cked" />
+            </div>
+            <span class="project-card-index">01</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Get F*cked</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Undying Weather"
+            data-type="Theatre"
+            data-year="2026"
+            data-role="Video Integration"
+            data-venue="Playwrights Horizons Theater School"
+            data-description="Full stage floor projections for an entire 45 minute one act play. Using three projectors and a video wall controller, a 30' x 10' stage was able to be covered with abstract and immersive visuals for this play in the round. Calmer moments of the piece included nature inspired visuals, whilst moments of intensity called for more dramatic projections, including a full two minute thunderstorm movement sequence."
+            data-credits="<strong>Media Design:</strong> Crystal Zhao &amp; William Owen<br><strong>Direction:</strong> Ahreumbi Rew"
+            data-video="assets/videos/undying-weather/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/undying-weather/thumbnail.jpg" alt="Undying Weather" />
+            </div>
+            <span class="project-card-index">02</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Undying Weather</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Fantasia"
+            data-type="Theatre"
+            data-year="2026"
+            data-role="Live Video Integration"
+            data-venue="Playwrights Horizons Theater School"
+            data-description="Immersive and engaging visuals projected onto three walls of a black box space, creating an electric environment for music, dance, and monologues. Three projectors positioned in different areas of the space allowed for near total wall coverage. Media design included a series of poignant short films as well as dynamic nightclub style visuals. A wireless mobile camera also allowed for the realtime integration of dancers and audience members in the visual design."
+            data-credits="<strong>Media Design:</strong> Ricky Bizzaro &amp; William Owen<br><strong>Direction:</strong> Ricky Bizzaro"
+            data-video="assets/videos/fantasia/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/fantasia/thumbnail.jpg" alt="Fantasia" />
+            </div>
+            <span class="project-card-index">03</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Fantasia</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="noa Digital Signage"
+            data-type="Installation"
+            data-year="2026"
+            data-role="Video Integration"
+            data-venue="noa, a bakery"
+            data-description="Permanent installation at &ldquo;noa, a bakery&rdquo; in the West Village, displayed overnight whilst the store is closed. A single projector mounted discreetly in the customer area allows for media to be projected on the entirety of the bar. Content is mapped to the specific contours of the wooden panels, allowing for a sleek segmented look. Content was mapped in the space with Resolume Arena and then exported to run permanently off a digital signage controller."
+            data-credits="<strong>Media Design:</strong> Jasmin Frisk &amp; William Owen<br><strong>Direction:</strong> Nicki Dehghani &amp; Jasmin Frisk"
+            data-video="assets/videos/noa-digital-signage/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/noa-digital-signage/thumbnail.jpg" alt="noa Digital Signage" />
+            </div>
+            <span class="project-card-index">04</span>
+            <div class="project-card-body">
+              <div class="project-card-title">noa Digital Signage</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Installation</span>
+                <span class="project-card-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="The Sexiest Man Alive"
+            data-type="Theatre"
+            data-year="2026"
+            data-role="Video Design"
+            data-venue="The Wild Project"
+            data-description="Transitional visuals and short video interludes for a full length musical at New York City Fringe Festival. Visuals were integrated into the larger audio/visual file for the show, allowing for a single board operator across both departments. Visual integration was able to add an additional level of production value in a fringe environment tight on time and budget."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Eleni Lefakis"
+            data-video="assets/videos/sexiest-man-alive/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/sexiest-man-alive/thumbnail.jpg" alt="The Sexiest Man Alive" />
+            </div>
+            <span class="project-card-index">05</span>
+            <div class="project-card-body">
+              <div class="project-card-title">The Sexiest Man Alive</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Get Fundraised"
+            data-type="Event"
+            data-year="2026"
+            data-role="Video Integration"
+            data-venue="The Maybury"
+            data-description="Full audio, visual, and lighting production for a fundraising event on midtown rooftop. Custom graphics adorned intricately mapped areas of the structure, whilst audio included multiple inputs including several wireless microphones. Quick thinking and adaptation was necessary to transfer the entire production setup inside due to inclement weather mid event."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Reese Villella"
+            data-video="assets/videos/get-fundraised/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/get-fundraised/thumbnail.jpg" alt="Get Fundraised" />
+            </div>
+            <span class="project-card-index">06</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Get Fundraised</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Event</span>
+                <span class="project-card-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="LOSERS"
+            data-type="Theatre"
+            data-year="2025"
+            data-role="Live Video Integration"
+            data-venue="The Rat"
+            data-description="Single projector setup in a tight blackbox space, projections mapped onto nearly a dozen independently controlled surfaces including components of the set and structural elements of the theater. A jailbroken Ring camera integral to the plot was integrated into the video design, allowing for a live feed to be captured and projected into the space, including &ldquo;night vision&rdquo; elements in near total darkness."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Mimi Schlecht"
+            data-video="assets/videos/losers/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/losers/thumbnail.jpg" alt="LOSERS" />
+            </div>
+            <span class="project-card-index">07</span>
+            <div class="project-card-body">
+              <div class="project-card-title">LOSERS</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Swinewomb"
+            data-type="Theatre"
+            data-year="2025"
+            data-role="Video Integration"
+            data-venue="The Red Pavillion"
+            data-description="Stage management and visual design for full length play premiere in an iconic Brooklyn venue. Haze elements allowed for stylistic interactions with projections. Content displayed from a single projector unit integrated in the set and onto velvet curtains in view of audience."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Reese Villella &amp; Jacksyn Ivy Jayne"
+            data-video="assets/videos/swinewomb/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/swinewomb/thumbnail.jpg" alt="Swinewomb" />
+            </div>
+            <span class="project-card-index">08</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Swinewomb</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Moonstone Orchard"
+            data-type="Theatre"
+            data-year="2025"
+            data-role="Video Design"
+            data-venue="The Tank"
+            data-description="Digital backdrops and video integration for a full horror length play. Three week turnaround from casting to show meant that digital media was the primary source of scenic design. Eerie moments in the text were accentuated by unsettling visuals, including some minor jump scares."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Reese Villella"
+            data-video="assets/videos/moonstone-orchard/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/moonstone-orchard/thumbnail.jpg" alt="Moonstone Orchard" />
+            </div>
+            <span class="project-card-index">09</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Moonstone Orchard</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Theatre</span>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Halloween BLVD"
+            data-type="Event"
+            data-year="2025"
+            data-role="Live Video Integration"
+            data-venue="Soho"
+            data-description="Completely mobile live camera and projector setup for seasonal event in Soho. Live camera feed integrated in Resolume with a variety of selectable graphics, controlled via external MIDI device. Content then redisplayed on the floor via portable projector included in handheld unit. A single wearer/operator able to utilize the entire setup, making for an excellent homage to a piece of Broadway history."
+            data-credits="<strong>Media Design:</strong> William Owen">
+            <div class="project-card-thumb">
+              <img src="assets/images/halloween-blvd/thumbnail.jpg" alt="Halloween BLVD" />
+            </div>
+            <span class="project-card-index">10</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Halloween BLVD</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Event</span>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card"
+            data-title="Lost in the World"
+            data-type="Dance"
+            data-year="2025"
+            data-role="Video Design"
+            data-venue="Clarice Smith Performing Arts Center"
+            data-description="Audio reactive visuals generated using Touchdesigner for a 10 minute dance thesis at the University of Maryland. Graphics synced with music filled the entire back wall, providing a dynamic backdrop accentuating dancer performances. Performers provided childhood clips of their introductions to dance, allowing for an emotional, nostalgia inducing video sequence."
+            data-credits="<strong>Media Design:</strong> William Owen<br><strong>Direction:</strong> Charlotte Owen"
+            data-video="assets/videos/lost-in-the-world/video.mp4">
+            <div class="project-card-thumb">
+              <img src="assets/images/lost-in-the-world/thumbnail.jpg" alt="Lost in the World" />
+            </div>
+            <span class="project-card-index">11</span>
+            <div class="project-card-body">
+              <div class="project-card-title">Lost in the World</div>
+              <div class="project-card-meta">
+                <span class="project-card-type">Dance</span>
+                <span class="project-card-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end .wheel-track -->
+      </div><!-- end .wheel-track-wrapper -->
+
+      <div class="wheel-controls">
+        <button class="wheel-btn" id="wheel-prev">&#8592;</button>
+        <div class="wheel-dots"></div>
+        <button class="wheel-btn" id="wheel-next">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- EXPANDED PANEL (populated by JS) -->
+    <div class="project-panel">
+      <div class="panel-inner">
+        <button class="panel-close">[ CLOSE ]</button>
+
+        <div class="panel-media">
+          <div class="panel-media-placeholder">▷<br>media coming soon</div>
+        </div>
+
+        <div class="panel-info">
+          <h2 class="panel-title"></h2>
+
+          <div class="panel-meta-row">
+            <div class="panel-meta-item">
+              <span class="panel-meta-label">Type</span>
+              <span class="panel-meta-value" data-panel-type></span>
+            </div>
+            <div class="panel-meta-item">
+              <span class="panel-meta-label">Year</span>
+              <span class="panel-meta-value" data-panel-year></span>
+            </div>
+            <div class="panel-meta-item">
+              <span class="panel-meta-label">Role</span>
+              <span class="panel-meta-value" data-panel-role></span>
+            </div>
+            <div class="panel-meta-item">
+              <span class="panel-meta-label">Venue</span>
+              <span class="panel-meta-value" data-panel-venue></span>
+            </div>
+          </div>
+
+          <p class="panel-description"></p>
+
+          <div class="panel-credits"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/fx.js"></script>
+</body>
+</html>

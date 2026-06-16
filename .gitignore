@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Source material — kept locally, not on GitHub
+Media/
+
+# Reference docs — kept locally, not deployed
+*.pdf
+
+# Editor / tool state
+.claude/
