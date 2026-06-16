@@ -110,8 +110,11 @@
   margin-bottom: 0.4rem;
 }
 
-.partner-name a {
-  color: inherit;
+.partner-name a,
+.partner-name a:link,
+.partner-name a:visited,
+.partner-name a:active {
+  color: var(--white);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s, border-color 0.2s;
