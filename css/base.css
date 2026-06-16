@@ -308,6 +308,41 @@ body::after {
   .nav-status { display: none; }
 }
 
+/* ── MOBILE NAV: scrollable page-select bar ── */
+@media (max-width: 720px) {
+  nav {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .nav-logo {
+    font-size: 1.7rem;
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;       /* Firefox */
+    mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 24px), transparent 100%);
+  }
+
+  .nav-links::-webkit-scrollbar { display: none; } /* WebKit */
+
+  .nav-links li {
+    flex-shrink: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+  }
+}
+
 /* ── BLINKING CURSOR ON SECTION LABELS ── */
 .section-label::after {
   content: '▌';
